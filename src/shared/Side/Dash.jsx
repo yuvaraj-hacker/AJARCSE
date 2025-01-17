@@ -18,7 +18,7 @@ function Dash() {
                 <div className="border border-[#70a2db] text-center bg-white">
                     <Link to='/' className={` ${isActive("/") ? "bg-white" : ""}`}>
                         <div className="p-2 ">
-                            <button className={`p-2 w-full border flex items-center gap-3 ${isActive("/") ? "bg-white" : "bg-[#EDF5FF]"} hover:bg-white`}>
+                            <button className={`p-2 w-full border flex items-center gap-3 2xl:text-base text-xs ${isActive("/") ? "bg-white" : "bg-[#EDF5FF]"} hover:bg-white`}>
                                 <img className='w-6' src="/images/Herosection/Home.png" alt="" />
                                 Home
                             </button>
@@ -27,7 +27,7 @@ function Dash() {
 
                     <Link to='/aboutus' className={` ${isActive("/aboutus") ? "bg-white" : ""}`}>
                         <div className="p-2">
-                            <button className={`p-2 w-full border flex items-center gap-3  ${isActive("/aboutus") ? "bg-white" : "bg-[#EDF5FF]"} hover:bg-white`}>
+                            <button className={`p-2 w-full border flex items-center gap-3 2xl:text-base text-xs  ${isActive("/aboutus") ? "bg-white" : "bg-[#EDF5FF]"} hover:bg-white`}>
                                 <img className='w-6' src="/images/Herosection/About.png" alt="" />
                                 About Us
                             </button>
@@ -36,7 +36,7 @@ function Dash() {
 
                     <Link to='/aim-nd-scope' className={` ${isActive("/aim-nd-scope") ? "bg-white" : ""}`}>
                         <div className="p-2">
-                            <button className={`p-2 w-full border flex items-center gap-3  ${isActive("/aim-nd-scope") ? "bg-white" : "bg-[#EDF5FF]"} hover:bg-white`}>
+                            <button className={`p-2 w-full border flex items-center gap-3 2xl:text-base text-xs  ${isActive("/aim-nd-scope") ? "bg-white" : "bg-[#EDF5FF]"} hover:bg-white`}>
                                 <img className='w-6' src="/images/Herosection/Sniper.png" alt="" />
                                 Aim & Scope
                             </button>
@@ -45,7 +45,7 @@ function Dash() {
 
                     <Link to='/editorial-board' className={` ${isActive("/editorial-board") ? "bg-white" : ""}`}>
                         <div className="p-2">
-                            <button className={`p-2 w-full border flex items-center gap-3  ${isActive("/editorial-board") ? "bg-white" : "bg-[#EDF5FF]"} hover:bg-white`}>
+                            <button className={`p-2 w-full border flex items-center gap-3 2xl:text-base text-xs ${isActive("/editorial-board") ? "bg-white" : "bg-[#EDF5FF]"} hover:bg-white`}>
                                 <img className='w-6' src="/images/Herosection/Noticeboard.png" alt="" />
                                 Editorial Board
                             </button>
@@ -54,7 +54,7 @@ function Dash() {
 
                     <Link to='/issues' className={` ${isActive("/issues") ? "bg-white" : ""}`}>
                         <div className="p-2">
-                            <button className={`p-2 w-full border flex items-center gap-3  ${isActive("/issues") ? "bg-white" : "bg-[#EDF5FF]"} hover:bg-white`}>
+                            <button className={`p-2 w-full border flex items-center gap-3 2xl:text-base text-xs  ${isActive("/issues") ? "bg-white" : "bg-[#EDF5FF]"} hover:bg-white`}>
                                 <img className='w-6' src="/images/Herosection/Confusion.png" alt="" />
                                 Issues
                             </button>
@@ -63,7 +63,7 @@ function Dash() {
 
                     <Link to='/author-guidelines' className={` ${isActive("/author-guidelines") ? "bg-white" : ""}`}>
                         <div className="p-2">
-                            <button className={`p-2 w-full border flex items-center gap-3  ${isActive("/author-guidelines") ? "bg-white" : "bg-[#EDF5FF]"} hover:bg-white`}>
+                            <button className={`p-2 w-full border flex items-center gap-3 2xl:text-base text-xs  ${isActive("/author-guidelines") ? "bg-white" : "bg-[#EDF5FF]"} hover:bg-white`}>
                                 <img className='w-6' src="/images/Herosection/Coach.png" alt="" />
                                 Author Guidelines
                             </button>
@@ -72,7 +72,7 @@ function Dash() {
 
                     <Link to='/copyrights-form' className={` ${isActive("/copyrights-form") ? "bg-white" : ""}`}>
                         <div className="p-2">
-                            <button className={`p-2 w-full border flex items-center gap-3  ${isActive("/copyrights-form") ? "bg-white" : "bg-[#EDF5FF]"} hover:bg-white`}>
+                            <button className={`p-2 w-full border flex items-center gap-3 2xl:text-base text-xs ${isActive("/copyrights-form") ? "bg-white" : "bg-[#EDF5FF]"} hover:bg-white`}>
                                 <img className='w-6' src="/images/Herosection/Copyright All Rights Reserved.png" alt="" />
                                 Copyright Form
                             </button>
@@ -81,7 +81,7 @@ function Dash() {
 
                     <Link to='/contactus' className={` ${isActive("/contactus") ? "bg-white" : ""}`}>
                         <div className="p-2">
-                            <button className={`p-2 w-full border flex items-center gap-3  ${isActive("/contactus") ? "bg-white" : "bg-[#EDF5FF]"} hover:bg-white`}>
+                            <button className={`p-2 w-full border flex items-center gap-3 2xl:text-base text-xs ${isActive("/contactus") ? "bg-white" : "bg-[#EDF5FF]"} hover:bg-white`}>
                                 <img className='w-6' src="/images/Herosection/Contact.png" alt="" />
                                 Contact Us
                             </button>
