@@ -1,49 +1,23 @@
 
 
 
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Dash from '../Side/Dash';
 import { GrDocumentZip } from 'react-icons/gr';
+import HeroSection from '../HeroSection/HeroSection';
 function Aboutus() {
-  const imageRef = useRef(null);
-  const containerRef = useRef(null);
-  useEffect(() => {
-    const handleScroll = () => {
-      let value = window.scrollY;
-      const container = containerRef.current;
-      if (imageRef.current && container) {
-        const containerRect = container.getBoundingClientRect();
-        // Only apply the scroll effect when the container is in view
-        if (containerRect.top >= 0 && containerRect.bottom <= window.innerHeight) {
-          imageRef.current.style.marginTop = `${value * 9.5}px`;
-        }
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    // Cleanup function to remove the event listener
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const [isActive, setIsActive] = useState(true);
   return (
     <>
       <section className="max-w-[96rem] mx-auto">
         <section className="grid grid-cols-6 gap-5">
           <section className="lg:col-span-5 col-span-6 ">
             <section className="">
-              <div class="  bg-[url('/images/Herosection/Frame.png')] lg:h-96 md:h-[450px] h-52 bg-cover bg-center overflow-hidden" ref={containerRef}>
-                <div className="max-w-[80rem] mx-auto">
-                  <div className="grid grid-cols-2   items-center">
-                    <p className="ml-auto text-white md:text-4xl text-lg">
-                      Peer Review
-                    </p>
-                    <div className="flex justify-center">
-                      <img ref={imageRef} className="w-96" id="image" src="/images/Herosection/9289258.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="max-w-screen-xl mx-auto w-full px-5 2xl:px-0  py-5">
+              <HeroSection
+                isActive={isActive}
+                activeText="Peer Review Process"
+              />
+              <div className="max-w-screen-xl mx-auto w-full px-3 2xl:px-0  py-5">
                 <div className="lg:flex md:flex ">
                   <div className="max-w-full w-full ">
                     <div className="border p-2 rounded-sm border-gray-100 bg-white">
@@ -52,22 +26,22 @@ function Aboutus() {
                       </h1>
 
                       <div className="max-w-full w-full leading-relaxed">
-                       
+
                         <p className="py-5 mt-3 text-justify">
-                          IJDIII are peer-reviewed, community-driven research journals
+                          AJARCSE are peer-reviewed, community-driven research journals
                           covering the latest specialist topics at the emerging
                           intersections of IT and other fields. A general guide for how to
                           prepare your text and graphics for an article to be included in
                           EAI Endorsed Transactions. Submitted papers are reviewed by the
-                          IJDIII Editorial Board & Reviewers.
+                          AJARCSE Editorial Board & Reviewers.
                         </p>
                         <h3 className="font-semibold mb-2 ">
-                          <i>Requirements for publishing in</i> IJDIII:
+                          <i>Requirements for publishing in</i> AJARCSE:
                         </h3>
                         <ul className="list-disc  list-outside pl-5  text-justify">
 
                           <li className="">
-                            The articles must be written by the correct IJDIII
+                            The articles must be written by the correct AJARCSE
                             <a
                               href="/documents/"
                               target="blank"
@@ -92,7 +66,7 @@ function Aboutus() {
                             Please ensure that the used reference style is Vancouver; if
                             the references are not in the correct style, they may need to
                             be retyped and carefully proofread. You can find it in the
-                            IJDIII templates.
+                            AJARCSE templates.
                           </li>
                           <li>
                             The articles have to be written in formal English,
@@ -115,7 +89,7 @@ function Aboutus() {
                           <li>
                             The paper must be submitted through the
                             <a
-                              href="https://IJDIII.com/aritms/index.php/IJDIII/about/submissions"
+                              href="https://AJARCSE.com/aritms/index.php/AJARCSE/about/submissions"
                               className="text-[#4b2d8b] underline whitespace-nowrap"
                             >
                               {" "}
@@ -137,16 +111,16 @@ function Aboutus() {
                             The manuscript should be prepared according to the guidelines
                             and requirements. For more information, please write to
                             <a
-                              href="mailto:editor@IJDIII.com"
+                              href="mailto:editor@AJARCSE.com"
                               className="text-[#4b2d8b] underline  "
                             >
                               {" "}
-                              editor@IJDIII.com.
+                              editor@AJARCSE.com.
                             </a>
                           </li>
                         </ul>
                         <a
-                          href="https://IJDIII.com/aritms/index.php/IJDIII/submission/wizard"
+                          href="https://AJARCSE.com/aritms/index.php/AJARCSE/submission/wizard"
                           className="text-[#4b2d8b] underline underline-offset-1 hover:underline-offset-4 hover:text-blue-500 duration-200 pt-5"
                         >
                           Submit a paper via OJS
@@ -198,12 +172,12 @@ function Aboutus() {
                         </ul>
 
                         <h1 className="text-xl font-semibold mt-5 mb-2 ">
-                          Benefits of IJDIII
+                          Benefits of AJARCSE
                         </h1>
                         <h3 className="font-semibold mb-2">Open Access</h3>
                         <ul className=" list-outside pl-5  list-disc text-justify">
                           <li>
-                            All articles in the IJDIII journal is an Open Access (OA).
+                            All articles in the AJARCSE journal is an Open Access (OA).
                           </li>
                           <li>
                             Authors can copy, redistribute, remix, transform, and build
@@ -234,7 +208,7 @@ function Aboutus() {
               </div>
             </section>
           </section>
-          <section className="col-span-1mx-auto h-fit p-2 space-y-3 lg:block hidden">
+          <section  className="col-span-1 mx-auto h-fit p-2 space-y-3 sticky top-20 lg:block hidden">
             <Dash />
           </section>
         </section>

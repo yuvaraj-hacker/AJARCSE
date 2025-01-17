@@ -14,9 +14,9 @@
 //       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
 //         <div className="md:flex md:justify-between items-start">
 //           <div className="mb-6 md:mb-0">
-//             <a href="https://IJDIII.com/" onClick={scrollToTop} className="flex items-center mb-5 gap-2 "> 
+//             <a href="https://AJARCSE.com/" onClick={scrollToTop} className="flex items-center mb-5 gap-2 "> 
 //               <img className="drop-shadow h-12 cursor-pointer" src="logo/logo.png" alt=""/>
-//               <span className="self-center text-3xl font-semibold whitespace-nowrap text-white cursor-pointer">IJDIII</span>
+//               <span className="self-center text-3xl font-semibold whitespace-nowrap text-white cursor-pointer">AJARCSE</span>
 //             </a>
 //             <div className="flex items-center gap-4 mb-2 text-white dark:text-gray-400 font-medium list-disc">
 //               <svg className="h-6 w-6 text-white" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  
@@ -24,7 +24,7 @@
 //                 <rect x="3" y="5" width="18" height="14" rx="2" />  
 //                 <polyline points="3 7 12 13 21 7" />
 //               </svg>
-//               <a href='mailto:editor@IJDIII.com' className='hover:underline'><h1>editor@IJDIII.com</h1></a>
+//               <a href='mailto:editor@AJARCSE.com' className='hover:underline'><h1>editor@AJARCSE.com</h1></a>
 //             </div>
 //             <div className="flex items-center gap-4 text-white dark:text-gray-400 font-medium list-disc">
 //               <svg className="h-6 w-6 text-white" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  
@@ -35,7 +35,7 @@
 //                 <path d="M11.5 3a17 17 0 0 0 0 18" />  
 //                 <path d="M12.5 3a17 17 0 0 1 0 18" />
 //               </svg>
-//               <a href='https://IJDIII.com/' className='hover:underline' ><h1>www.IJDIII.com</h1></a>
+//               <a href='https://AJARCSE.com/' className='hover:underline' ><h1>www.AJARCSE.com</h1></a>
 //             </div>
 //           </div>
 //           <div className="grid sm:grid-cols-1 gap-8 sm:gap-6 md:grid-cols-2">
@@ -77,12 +77,12 @@
 //         <hr className="my-3 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-5 relative" />
 
 //         <div className=" text-center p-2  ">
-//           <span className="text-sm  text-white dark:text-gray-400 ">© 2024 <a  onClick={scrollToTop} href="https://IJDIII.com/" className="hover:underline">IJDIII™</a>. All Rights Reserved.
+//           <span className="text-sm  text-white dark:text-gray-400 ">© 2024 <a  onClick={scrollToTop} href="https://AJARCSE.com/" className="hover:underline">AJARCSE™</a>. All Rights Reserved.
 //           </span>
 
 //       </div>
 //     </div>
-//     <div className='relative'><a href="https://IJDIII.com/aritms/index.php/IJDIII/about/submissions"><img src="logo/ojs_brand.png" alt="" className='drop-shadow-[] h-16 absolute right-10 bottom-20 md:bottom-2 2xl:right-80'/></a></div>
+//     <div className='relative'><a href="https://AJARCSE.com/aritms/index.php/AJARCSE/about/submissions"><img src="logo/ojs_brand.png" alt="" className='drop-shadow-[] h-16 absolute right-10 bottom-20 md:bottom-2 2xl:right-80'/></a></div>
 // </footer>
 
 
@@ -101,9 +101,9 @@ const Footer = () => {
         <div className="grid grid-cols-1   md:grid-cols-3 gap-8">
           {/* Contact Information */}
           <div>
-            <h4 className="text-xl font-bold mb-2">IJDIII </h4>
-            <p>Email: <a href="mailto:editor@IJDIII.com" className="text-blue-400">editor@ijdiii.com</a></p>
-            <p>Website: <a href="https://www.IJDIII.com" className="text-blue-400">www.ijdiii.com</a></p>
+            <h4 className="text-xl font-bold mb-2">AJARCSE</h4>
+            <p>Email: <a href="mailto:editor@AJARCSE.com" className="text-blue-400">editor@ajarcse.com</a></p>
+            <p>Website: <a href="https://www.AJARCSE.com" className="text-blue-400">www.ajarcse.com</a></p>
           </div>
 
           {/* Navigation Links */}
@@ -135,7 +135,7 @@ const Footer = () => {
           <div>
           </div>
           <div className="text-center lg:mb-0 mb-5">
-            <p>© 2024 IJDIII. All Rights Reserved.</p>
+            <p>© 2025 AJARCSE. All Rights Reserved.</p>
           </div>
           <div>
             <img className='ml-auto w-24' src="/images/Herosection/OJS.png" alt="ojs" />

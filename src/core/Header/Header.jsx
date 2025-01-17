@@ -41,11 +41,11 @@ const Header = () => {
   }, [location]);
 
   return (
-    <header className="bg-white  p-4">
+    <header className="bg-white z-50 p-4">
       <div className="container mx-auto flex justify-between text-black items-center">
         <Link to='/'>
           <div className="flex items-center">
-            <p className="text-3xl ">IJDIII</p>
+            <p className="text-3xl ">AJARCSE</p>
           </div>
         </Link>
 
@@ -64,7 +64,7 @@ const Header = () => {
           />
         </div>
 
-      
+
         <nav
           className={`lg:flex lg:space-x-4 ${menuOpen ? 'block ' : 'hidden '}
           flex-col lg:py-0 py-5  lg:flex-row  bg-[#70a2db] lg:bg-transparent lg:text-[#70a2db]  lg:border-none border  text-white absolute lg:static top-16 left-0 w-full text-center lg:w-auto z-50`}
@@ -89,13 +89,13 @@ const Header = () => {
               <div className="absolute lg:left-0 md:left-96 left-28  lg:text-[#70a2db]  bg-[#70a2db] lg:bg-white  text-white  mt-2 rounded shadow-lg w-56">
                 <Link
                   to="/aboutus"
-                  className={`block px-4 py-2  ${isActive("/aboutus") ? "underline underline-offset-4 text-black " : ""}`}
+                  className={`px-4 py-2 lg:hidden block ${isActive("/aboutus") ? "underline underline-offset-4 text-black " : ""}`}
                 >
                   About
                 </Link>
                 <Link
                   to="/editorial-board"
-                  className={`block px-4 py-2  ${isActive("/editorial-board") ? "underline underline-offset-4 text-black" : ""}`}
+                  className={` px-4 py-2 lg:hidden block ${isActive("/editorial-board") ? "underline underline-offset-4 text-black" : ""}`}
                 >
                   Editorial Board
                 </Link>
@@ -125,25 +125,25 @@ const Header = () => {
                 </Link>
                 <Link
                   to="/aim-nd-scope"
-                  className={`block px-4 py-2  ${isActive("/aim-nd-scope") ? "underline underline-offset-4 text-black" : ""}`}
+                  className={` px-4 py-2  lg:hidden block ${isActive("/aim-nd-scope") ? "underline underline-offset-4 text-black" : ""}`}
                 >
                   Aim and Scope
                 </Link>
                 <Link
                   to="/issues"
-                  className={`block px-4 py-2  ${isActive("/issues") ? "underline underline-offset-4 text-black" : ""}`}
+                  className={` px-4 py-2 lg:hidden block  ${isActive("/issues") ? "underline underline-offset-4 text-black" : ""}`}
                 >
                   Issues
                 </Link>
                 <Link
                   to="/author-guidelines"
-                  className={`block px-4 py-2  ${isActive("/author-guidelines") ? "underline underline-offset-4 text-black" : ""}`}
+                  className={` px-4 py-2 lg:hidden block   ${isActive("/author-guidelines") ? "underline underline-offset-4 text-black" : ""}`}
                 >
                   Author Guidelines
                 </Link>
                 <Link
                   to="/copyrights-form"
-                  className={`block px-4 py-2  ${isActive("/copyrights-form") ? "underline underline-offset-4 text-black" : ""}`}
+                  className={` px-4 py-2 lg:hidden block   ${isActive("/copyrights-form") ? "underline underline-offset-4 text-black" : ""}`}
                 >
                   Copyright Form
                 </Link>

@@ -85,7 +85,7 @@ function Sidebar() {
           </h1>
         </Link> 
 
-      <h1 className="p-2 pl-0 border-b  border-slate-300 text-sm font-semibold"> <a href="https://IJDIII.com/tmp/index.php/Overview/login">Submit New Manuscript</a></h1>  
+      <h1 className="p-2 pl-0 border-b  border-slate-300 text-sm font-semibold"> <a href="https://AJARCSE.com/tmp/index.php/Overview/login">Submit New Manuscript</a></h1>  
         <Link to="/issues" onClick={scrollToTop}>
           <h1
             role="button"

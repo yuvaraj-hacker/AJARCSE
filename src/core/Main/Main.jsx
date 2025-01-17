@@ -6,27 +6,19 @@ import Sidebar from "../../shared/Sidebar/Sidebar";
 
 
 
-export default function Main () {
+export default function Main() {
 
-    return(
-       <>
-       <div className="h-screen flex flex-col justify-between">
-           <Header/>
-            
-            <main className=" lg:mt-20 mt-20 ">
-                 <Outlet/>
-            </main>
-            
-            <Footer/> 
+    return (
+        <>
+            <div className="h-screen flex flex-col justify-between">
+                <Header />
+                <main className=" lg:mt-20  mt-20 ">
+                    <Outlet />
+                </main>
+                <Footer />
             </div>
 
-       </>
+        </>
 
-       
-      
-
-  
-       
-       
     )
 }

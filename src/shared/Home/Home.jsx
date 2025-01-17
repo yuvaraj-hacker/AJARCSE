@@ -1,97 +1,33 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import '../Home/Home.css'
 import Dash from "../Side/Dash";
+import HeroSection from "../HeroSection/HeroSection";
 
 
 
 function Home() {
-  const imageRef = useRef(null);
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      let value = window.scrollY;
-      const container = containerRef.current;
-
-      if (imageRef.current && container) {
-        const containerRect = container.getBoundingClientRect();
-        if (containerRect.top >= 0 && containerRect.bottom <= window.innerHeight) {
-          imageRef.current.style.marginTop = `${value * 9.5}px`;
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const [isActive, setIsActive] = useState(true);
 
   return (
     <>
-
-
-
-
-
-
-
-
-
-
-
       <section className="max-w-[96rem] mx-auto">
         <section className="grid grid-cols-6 gap-5">
-
           <section className="lg:col-span-5 col-span-6 ">
-
-
             <section className="">
-
-
-              <div class="  bg-[url('/images/Herosection/Frame.png')] lg:h-96 md:h-[450px] h-52  bg-cover bg-center overflow-hidden" ref={containerRef}>
-                <div className="max-w-[80rem] mx-auto">
-
-                  <div className="grid grid-cols-2   items-center">
-
-
-                    <p className="md:ml-auto text-white md:text-4xl  text-center text-sm font-semibold" >
-                      Welcome To Open Journal System
-                    </p>
-                    <div className="flex justify-center">
-
-
-                      <img ref={imageRef} className="w-96" id="image" src="/images/Herosection/9289258.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-
+              <HeroSection isActive={isActive} activeText="Welcome To American Journal of Advanced Research in Computer Science & Engineering" />
               <div className="max-w-screen-xl mx-auto w-full px-2 2xl:px-0  py-5">
                 <div className="lg:flex md:flex ">
                   <div className="max-w-full w-full ">
-
                     <div className="border p-2 rounded-sm border-gray-100 bg-white">
-
-
                       <h1 className="text-black border w-fit p-2 bg-[#C0DBF8] md:text-3xl text-lg  ">
                         About
                       </h1>
-
                       <div className="flex items-center lg:flex-nowrap flex-wrap lg:gap-4">
                         <img src="/images/Herosection/fsfsf.png" alt="" className="w-40 lg:mx-0 mx-auto" />
-
-
-
                         <h1 className="text-justify  mt-3">
                           <strong className="text-[#70a2db] font-bold">
-                            International Journal of Digital Innovation, Insight, and Information (IJDIII)
+                            American Journal of Advanced Research in Computer Science & Engineering (AJARCSE)
                           </strong>{" "}
                           is a scholarly online, open access, peer-reviewed
                           interdisciplinary, quarterly, and fully refereed journal
@@ -104,32 +40,21 @@ function Home() {
                         </h1>
                       </div>
                     </div>
-
-
                     <div className="p-2">
                       <h1 className="bg-[#C0DBF8] md:text-3xl text-lg   text-black  p-2 shadow mt-5 py-2">
-                        The Journal covers following areas of Digital Innovation, Insight, and Information
+                        The Journal covers following areas :
                       </h1>
                     </div>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 bg-white rounded-sm gap-8 py-5">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 bg-white rounded-sm   py-5">
                       <div className="max-w-full w-full p-2">
-                        <div className="flex gap-3 items-center mb-5">
-
+                        {/* <div className="flex gap-3 items-center mb-5">
                           <p className="text-center text-[#70a2db]  text-xl font-bold">Digital Innovation</p>
-                        </div>
-
-
-
-
-
-
-
-
+                        </div> */}
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/* {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -137,17 +62,16 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-
-                          <h1>    Fintech Evolution</h1>
+                          <h1>AI & Machine Learning Innovations</h1>
                         </h1>
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -155,16 +79,16 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1>    AR/VR Applications</h1>
+                          <h1> Blockchain & Fintech Evolution</h1>
                         </h1>
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -172,16 +96,16 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1>   Digital Disruption</h1>
+                          <h1>  Quantum Computing Trends</h1>
                         </h1>
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -189,16 +113,16 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1>  Mobile Innovation </h1>
+                          <h1>  Edge Computing & IoT </h1>
                         </h1>
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -206,16 +130,16 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1> Automation Trends</h1>
+                          <h1> Cybersecurity & Threat Intelligence</h1>
                         </h1>
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -223,16 +147,16 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1> Digital Transformation</h1>
+                          <h1> Cloud Computing Advances</h1>
                         </h1>
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -240,17 +164,17 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1> E-commerce Advancements</h1>
+                          <h1>Big Data & Predictive Analytics</h1>
                         </h1>
 
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -258,25 +182,26 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1> Data-Driven Innovation</h1>
+                          <h1> Augmented & Virtual Reality (AR/VR)</h1>
                         </h1>
 
 
                       </div>
                       <div className="max-w-full p-2 w-full">
-                        <div className="flex gap-3 items-center mb-5">
+                        {/* <div className="flex gap-3 items-center mb-5">
 
                           <p className="text-center text-[#70a2db] text-xl font-bold">Insight and Analytics</p>
-                        </div>
+                        </div> */}
+
 
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -284,16 +209,16 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1>Data-Driven Decisions</h1>
+                          <h1>  Automation & Robotics</h1>
                         </h1>
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -301,16 +226,16 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1>Predictive Modeling</h1>
+                          <h1> Digital Transformation Strategies</h1>
                         </h1>
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -318,16 +243,16 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1>Customer Analytics</h1>
+                          <h1>5G & Future Networks</h1>
                         </h1>
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -335,10 +260,10 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1>Real-Time Insights</h1>
+                          <h1> Smart Cities & IoT Integration</h1>
                         </h1>
 
 
@@ -347,8 +272,8 @@ function Home() {
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -356,16 +281,16 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1>Descriptive Analytics</h1>
+                          <h1> Human-Computer Interaction</h1>
                         </h1>
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -373,17 +298,17 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1>Retail Analytics</h1>
+                          <h1>Deep Learning & Neural Networks</h1>
                         </h1>
 
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -391,16 +316,16 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1>Predictive Customer Behavior</h1>
+                          <h1>Computational Intelligence</h1>
                         </h1>
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -408,49 +333,38 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1>IoT Data Insights</h1>
+                          <h1>  Natural Language Processing (NLP)</h1>
                         </h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                       </div>
                       <div className="max-w-full p-2 w-full ">
-                        <div className="flex gap-3 items-center text-xl font-semibold mb-5">
+                        {/* <div className="flex gap-3 items-center text-xl font-semibold mb-5">
 
                           <p className="text-center text-[#70a2db] font-bold text-xl">Information </p>
-                        </div>
+                        </div> */}
+
+
+
+
+
+
+
+
+                        {/*                         
+                        Wearable Technologies & Smart Devices
+                        Cloud-Native Applications
+                        Digital Twin Technology
+                        Embedded Systems & Real-Time Computing
+                        Metaverse & Virtual Environments
+                        Future of Computing & Emerging Tech */}
+
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -458,16 +372,16 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1>Data Management</h1>
+                          <h1> Bioinformatics & Computational Biology</h1>
                         </h1>
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -475,17 +389,17 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1>Information Security</h1>
+                          <h1>   Cryptography & Data Security</h1>
                         </h1>
 
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -493,17 +407,17 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1> Cloud Storage</h1>
+                          <h1>  E-Governance & Digital Policies</h1>
                         </h1>
 
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -511,16 +425,16 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1>   Data Privacy</h1>
+                          <h1> Green Computing & Energy Efficiency</h1>
                         </h1>
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -528,35 +442,17 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1> Cybersecurity Protocols</h1>
-                        </h1>
-
-                        <h1 className="flex items-center gap-2 mb-1">
-                          <svg width="30" height="30" viewBox="0 0 200 200">
-                            <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
-                                attributeName="cx"
-                                from="100"
-                                to="180"
-                                dur="2s"
-                                repeatCount="indefinite"
-                                keyTimes="0;0.5;1"
-                                values="100;180;100"
-                              />
-                            </circle>
-                          </svg>
-                          <h1> Information Architecture </h1>
+                          <h1> Software Engineering Trends</h1>
                         </h1>
 
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -564,16 +460,34 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1> Encryption Standards</h1>
+                          <h1>  Computer Vision & Image Processing</h1>
+                        </h1>
+
+                        <h1 className="flex items-center gap-2 mb-1">
+                          <svg width="30" height="30" viewBox="0 0 200 200">
+                            <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
+                                attributeName="cx"
+                                from="100"
+                                to="180"
+                                dur="2s"
+                                repeatCount="indefinite"
+                                keyTimes="0;0.5;1"
+                                values="100;180;100"
+                              /> */}
+                            </circle>
+                          </svg>
+                          <h1> E-Commerce & Smart Payment Systems</h1>
                         </h1>
                         <h1 className="flex items-center gap-2 mb-1">
                           <svg width="30" height="30" viewBox="0 0 200 200">
                             <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
-                            <circle cx="180" cy="100" r="20" fill="#e74c3c">
-                              <animate
+                            <circle cx="100" cy="100" r="20" fill="#e74c3c">
+                              {/*<animate
                                 attributeName="cx"
                                 from="100"
                                 to="180"
@@ -581,10 +495,10 @@ function Home() {
                                 repeatCount="indefinite"
                                 keyTimes="0;0.5;1"
                                 values="100;180;100"
-                              />
+                              /> */}
                             </circle>
                           </svg>
-                          <h1>  Big Data Handling</h1>
+                          <h1> Ethical AI & Responsible Computing</h1>
                         </h1>
 
                       </div>
@@ -611,20 +525,20 @@ function Home() {
                 </h1>
 
                 <h1 className="text-center mt-2">
-                  Launch of Next Issue: 25<sup>th</sup> Dec 2024
+                  Launch of Next Issue: 25<sup>th</sup> June 2025
                 </h1>
                 <h1 className="text-center mt-2 p-2 font-bold text-[#70a2db] ">
-                  Last Date for Submission of Manuscript for next Issue: 18<sup>th</sup> Dec
-                  2024
+                  Last Date for Submission of Manuscript for next Issue: 18<sup>th</sup> June
+                  2025
                 </h1>
 
                 <h1 className="text-center mt-2">With Warm Regards,</h1>
                 <h1 className="text-center font-semibold mt-2">Editor-in-chief</h1>
-                <h1 className="text-center font-semibold mt-1">IJDIII</h1>
+                <h1 className="text-center font-semibold mt-1">AJARCSE</h1>
               </div>
             </section>
           </section>
-          <section className="col-span-1mx-auto h-fit p-2 space-y-3 lg:block hidden">
+          <section className="col-span-1 mx-auto h-fit p-2 space-y-3 sticky top-20 lg:block hidden">
             <Dash />
           </section>
         </section>

@@ -1,48 +1,23 @@
 
 
 
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Dash from '../Side/Dash';
+import HeroSection from '../HeroSection/HeroSection';
 function Aboutus() {
-    const imageRef = useRef(null);
-    const containerRef = useRef(null);
-    useEffect(() => {
-        const handleScroll = () => {
-            let value = window.scrollY;
-            const container = containerRef.current;
-            if (imageRef.current && container) {
-                const containerRect = container.getBoundingClientRect();
-                // Only apply the scroll effect when the container is in view
-                if (containerRect.top >= 0 && containerRect.bottom <= window.innerHeight) {
-                    imageRef.current.style.marginTop = `${value * 9.5}px`;
-                }
-            }
-        };
-        window.addEventListener("scroll", handleScroll);
-        // Cleanup function to remove the event listener
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+   const [isActive, setIsActive] = useState(true)
     return (
         <>
             <section className="max-w-[96rem] mx-auto">
                 <section className="grid grid-cols-6 gap-5">
                     <section className="lg:col-span-5 col-span-6 ">
                         <section className="">
-                            <div class="  bg-[url('/images/Herosection/Frame.png')] lg:h-96 md:h-[450px] h-52 bg-cover bg-center overflow-hidden" ref={containerRef}>
-                                <div className="max-w-[80rem] mx-auto">
-                                    <div className="grid grid-cols-2   items-center">
-                                        <p className="ml-auto text-white md:text-4xl text-lg">
-                                            CopyrightForm
-                                        </p>
-                                        <div className="flex justify-center">
-                                            <img ref={imageRef} className="w-96" id="image" src="/images/Herosection/9289258.png" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="max-w-screen-xl mx-auto w-full px-5 2xl:px-0  py-5">
+                            <HeroSection
+                            isActive={isActive}
+                            activeText="Copyright Form"
+                            />
+
+                            <div className="max-w-screen-xl mx-auto w-full px-3 2xl:px-0  py-5">
                                 <div className="lg:flex md:flex ">
                                     <div className="max-w-full w-full ">
                                         <div className="border p-2 rounded-sm border-gray-100 bg-white">
@@ -56,7 +31,7 @@ function Aboutus() {
                                                 <p className="md:w-[450px] leading-relaxed" > I/We
                                                     ____________________________.  The author / authors of the research paper/article
                                                     entitled ______________________
-                                                    authorize you to publish the above mentioned paper/article in IJDIII.</p>
+                                                    authorize you to publish the above mentioned paper/article in AJARCSE.</p>
                                                 <h1 className=" lg:text-xl font-semibold mt-8 mb-2">It is herein agreed that:</h1>
                                                 <h1 className=" text-justify mb-2">
                                                     1. I/We will not publish his/her above said contribution anywhere else
@@ -76,7 +51,7 @@ function Aboutus() {
                                                     does not violate the copyright or trademark, or infringes on the rights
                                                     or the privacy of others; and that all statements in the Article
                                                     asserted as facts are either true or are based upon reasonable research.</h1>
-                                                <h1 className=" text-justify mb-2">4. I/We agree to indemnify the Editors IJDIII against all claims
+                                                <h1 className=" text-justify mb-2">4. I/We agree to indemnify the Editors AJARCSE against all claims
                                                     and expenses arising from any breach of warranty from me/us in this
                                                     agreement.</h1>
 
@@ -92,24 +67,6 @@ function Aboutus() {
                                                     </div>
                                                 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                             </div>
                                         </div>
                                     </div>
@@ -117,7 +74,7 @@ function Aboutus() {
                             </div>
                         </section>
                     </section>
-                    <section className="col-span-1mx-auto h-fit p-2 space-y-3 lg:block hidden">
+                    <section  className="col-span-1 mx-auto h-fit p-2 space-y-3 sticky top-20 lg:block hidden">
                         <Dash />
                     </section>
                 </section>
