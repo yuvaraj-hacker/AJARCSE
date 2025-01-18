@@ -32,7 +32,7 @@ function Aboutus() {
                         <img className='w-96 mx-auto rounded-3xl' src="/images/Herosection/42878.jpg" alt="" />
                       </div>
 
-                      <p className="mt-8 ">Selected  AJARCSE will be indexed in all major indexing services, including Web of Science, Scopus, EBSCO, ProQuest, CNKI, DBLP, Google Scholar, Microsoft Academic Search, OCLC Discovery Services, DOAJ, Elektronische Zeitschriftenbibliothek, CrossRef, and others soon.</p>
+                      <p className="mt-8 md:text-base text-sm ">Selected  AJARCSE will be indexed in all major indexing services, including Web of Science, Scopus, EBSCO, ProQuest, CNKI, DBLP, Google Scholar, Microsoft Academic Search, OCLC Discovery Services, DOAJ, Elektronische Zeitschriftenbibliothek, CrossRef, and others soon.</p>
                     </div>
                   </div>
                 </div>

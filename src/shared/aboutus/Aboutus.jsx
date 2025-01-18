@@ -29,18 +29,18 @@ function Aboutus() {
                       <div className='mx-auto mt-4 '>
                         <img className='w-96 mx-auto rounded-3xl' src="/images/Herosection/advanceearch.png" alt="" />
                       </div>
-                      <h1 className="  mb-2  mt-8 text-center leading-relaxed ">American Journal of Advanced Research in Computer Science & Engineering (AJARCSE) is a scholarly peer-reviewed journal dedicated to advancing the understanding and application of information technology and management science in today's digital age.</h1>
+                      <h1 className="  mb-2  mt-8 text-center leading-relaxed  md:text-base text-sm">American Journal of Advanced Research in Computer Science & Engineering (AJARCSE) is a scholarly peer-reviewed journal dedicated to advancing the understanding and application of information technology and management science in today's digital age.</h1>
                       <h1 className="font-semibold  lg:text-xl mt-8 mb-2 underline underline-offset-4">Scope</h1>
-                      <h1 className="  text-justify leading-relaxed mb-3">The scope of the AJARCSE is to provide an academic medium and an important
+                      <h1 className="  text-justify leading-relaxed mb-3 md:text-base text-sm">The scope of the AJARCSE is to provide an academic medium and an important
                         reference for the advancement and dissemination of research results that support high-level learning,
                         teaching and research in the fields of engineering, science and technology. Original theoretical work
                         and application-based studies, which contributes to a better understanding of engineering, science and
                         technological challenges, are encouraged.</h1>
                       <h1 className=" lg:text-xl font-semibold mt-8 mb-2  underline underline-offset-4">Mission</h1>
-                      <h1 className="  text-justify leading-relaxed mb-3">Our mission is to provide a platform for researchers, academicians, professionals, and students to publish innovative research in the fields of information technology (IT) and management science. By fostering rigorous inquiry and dialogue, we aim to contribute to the body of knowledge that informs both theory and practice in these critical areas.</h1>
+                      <h1 className="  text-justify leading-relaxed mb-3 md:text-base text-sm">Our mission is to provide a platform for researchers, academicians, professionals, and students to publish innovative research in the fields of information technology (IT) and management science. By fostering rigorous inquiry and dialogue, we aim to contribute to the body of knowledge that informs both theory and practice in these critical areas.</h1>
 
                       <h1 className=" lg:text-xl font-semibold mt-8 mb-2  underline underline-offset-4">Scope</h1>
-                      <ul className="list-disc gap-2  ml-5 mb-3">
+                      <ul className="list-disc gap-2  ml-5 mb-3 md:text-base text-sm">
                         <li>Information systems and technology</li>
                         <li>Data analytics and business intelligence</li>
                         <li>E-commerce and digital marketing</li>
@@ -50,12 +50,12 @@ function Aboutus() {
 
                       </ul>
                       <h1 className="font-semibold  lg:text-xl mt-8 mb-2  underline underline-offset-4">Publication Ethics</h1>
-                      <h1 className="  text-justify leading-relaxed mb-3">We adhere strictly to the highest ethical standards in publishing and strive for transparency, integrity, and fairness in our peer-review process. Authors can expect a constructive review process that maintains confidentiality and upholds academic rigor.</h1>
+                      <h1 className="  text-justify leading-relaxed mb-3 md:text-base text-sm">We adhere strictly to the highest ethical standards in publishing and strive for transparency, integrity, and fairness in our peer-review process. Authors can expect a constructive review process that maintains confidentiality and upholds academic rigor.</h1>
 
                       <h1 className="font-semibold  lg:text-xl mt-8 mb-2  underline underline-offset-4">Audience</h1>
-                      <h1 className="  text-justify leading-relaxed mb-3">Our audience includes researchers, educators, practitioners, and policymakers interested in the latest advancements and applications in IT and management science. We encourage interdisciplinary research that bridges the gap between theory and practice.</h1>
+                      <h1 className="  text-justify leading-relaxed mb-3 md:text-base text-sm">Our audience includes researchers, educators, practitioners, and policymakers interested in the latest advancements and applications in IT and management science. We encourage interdisciplinary research that bridges the gap between theory and practice.</h1>
                       <h1 className="font-semibold  lg:text-xl mt-8 mb-2  underline underline-offset-4">Submission Guidelines</h1>
-                      <h1 className="  text-justify leading-relaxed ">Authors are invited to submit original manuscripts that have not been published previously and are not under consideration elsewhere. Detailed submission guidelines can be found on our website to ensure clarity and consistency in the submission process.
+                      <h1 className="  text-justify leading-relaxed md:text-base text-sm ">Authors are invited to submit original manuscripts that have not been published previously and are not under consideration elsewhere. Detailed submission guidelines can be found on our website to ensure clarity and consistency in the submission process.
                       </h1>
 
                     </div>

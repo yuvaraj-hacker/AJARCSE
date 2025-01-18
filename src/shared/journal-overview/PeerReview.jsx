@@ -39,7 +39,7 @@ function Aboutus() {
 
                       <div className="max-w-full w-full leading-relaxed">
 
-                        <p className="py-5 mt-3 text-center">
+                        <p className="py-5 mt-3 text-center md:text-base text-sm">
                           AJARCSE are peer-reviewed, community-driven research journals
                           covering the latest specialist topics at the emerging
                           intersections of IT and other fields. A general guide for how to
@@ -50,7 +50,7 @@ function Aboutus() {
                         <h3 className="font-semibold mb-2 ">
                           <i>Requirements for publishing in</i> AJARCSE:
                         </h3>
-                        <ul className="list-disc  list-outside pl-5  text-justify">
+                        <ul className="list-disc  list-outside pl-5  text-justify md:text-base text-sm">
 
                           <li className="">
                             The articles must be written by the correct AJARCSE
@@ -112,7 +112,7 @@ function Aboutus() {
                         <h3 className="font-semibold mt-5 mb-2">
                           <i>To submit a paper via OJS you will need:</i>{" "}
                         </h3>
-                        <ul className=" list-outside pl-5  list-disc text-justify mb-5">
+                        <ul className=" list-outside pl-5  list-disc text-justify mb-5 md:text-base text-sm">
 
                           <li>
                             Your manuscript in the OpenOffice, Microsoft Word, or RTF
@@ -139,7 +139,7 @@ function Aboutus() {
                         </a>
                         <h1 className="text-xl font-semibold mb-2 mt-5 ">Article types</h1>
 
-                        <ul className="  list-outside pl-5  list-disc text-justify">
+                        <ul className="  list-outside pl-5  list-disc text-justify md:text-base text-sm">
 
                           <li>
                             Research article: Articles (4000-8000 words) that report
@@ -187,7 +187,7 @@ function Aboutus() {
                           Benefits of AJARCSE
                         </h1>
                         <h3 className="font-semibold mb-2">Open Access</h3>
-                        <ul className=" list-outside pl-5  list-disc text-justify">
+                        <ul className=" list-outside pl-5  list-disc text-justify md:text-base text-sm">
                           <li>
                             All articles in the AJARCSE journal is an Open Access (OA).
                           </li>
@@ -206,7 +206,7 @@ function Aboutus() {
                         <h3 className="font-semibold mt-5 mb-2">
                           Rigorous review process
                         </h3>
-                        <p className="text-justify">
+                        <p className="text-justify md:text-base text-sm">
                           Submitted papers are double-blind reviewed. The thoroughly
                           transparent review process increases review quality by
                           simultaneously evaluating the performance of reviewers and the

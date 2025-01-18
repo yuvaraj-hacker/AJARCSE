@@ -36,7 +36,7 @@ function Aboutus() {
                       </div>
                       <div className="max-w-full w-full leading-relaxed">
 
-                        <ul className='mt-8 list-disc list-outside pl-5 '>
+                        <ul className='mt-8 list-disc list-outside pl-5 md:text-base text-sm '>
                           <li>All articles in the International Journal of Advanced Research in Information Technology and Management Science (AJARCSE) journals are of Open Access (OA).</li>
                           <li>Authors can copy, redistribute, remix, transform, and build upon the material since all the papers are published under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license.</li>
                           <li>Community standards, rather than copyright law, will continue to provide the mechanism for enforcement of proper attribution and responsible use of the published work.</li>

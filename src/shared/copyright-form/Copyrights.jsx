@@ -35,10 +35,10 @@ function Aboutus() {
                                                 <img className='w-96 mx-auto rounded-3xl' src="/images/Herosection/copy.jpg" alt="" />
                                             </div>
 
-                                            <div className="max-w-full w-full ">
+                                            <div className="max-w-full w-full md:text-base text-sm ">
 
                                                 <h1 className="lg:text-xl font-semibold mb-2 mt-8">DECLARATION</h1>
-                                                <p className="md:w-[450px] leading-relaxed" > I/We
+                                                <p className="md:w-[450px] leading-relaxed " > I/We
                                                     ____________________________.  The author / authors of the research paper/article
                                                     entitled ______________________
                                                     authorize you to publish the above mentioned paper/article in AJARCSE.</p>
