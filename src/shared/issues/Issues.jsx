@@ -12,21 +12,31 @@ function Aboutus() {
 
     return (
         <>
-            <section className="max-w-[96rem] mx-auto">
-                <section className="grid grid-cols-6 gap-5">
-                    <section className="lg:col-span-5 col-span-6 ">
+            <section className="  mx-auto">
+                <section className=" ">
+                    <section className="  ">
                         <section className="">
                             <HeroSection
-                            isActive={isActive}
-                            activeText="Issues"
+                                isActive={isActive}
+                                activeText="Issues"
                             />
                             <div className="max-w-screen-xl mx-auto w-full px-3 2xl:px-0  py-5">
                                 <div className="lg:flex md:flex ">
                                     <div className="max-w-full w-full ">
-                                        <div className="border p-2 rounded-sm border-gray-100 bg-white">
-                                            <h1 className="text-black border w-fit p-2 bg-[#C0DBF8] md:text-3xl text-lg  ">
-                                                Issues
-                                            </h1>
+                                        <div className="  p-2   bg-white">
+                                            <p className="text-center md:text-2xl text-lg">Issues</p>
+                                            <div class="flex items-center   justify-center gap-1.5">
+                                                <span class="w-1.5 h-1.5 bg-[#388883] rounded-full"></span>
+                                                <span class="w-2 h-2 bg-[#388883] rounded-full"></span>
+                                                <span class="w-2.5 h-2.5 bg-[#388883] rounded-full"></span>
+                                                <span class="w-3.5 h-3.5 bg-[#388883] rounded-full"></span>
+                                                <span class="w-2.5 h-2.5 bg-[#388883] rounded-full"></span>
+                                                <span class="w-2 h-2 bg-[#388883] rounded-full"></span>
+                                                <span class="w-1.5 h-1.5 bg-[#388883] rounded-full"></span>
+                                            </div>
+                                            <div className='mx-auto mt-4 '>
+                                                <img className='w-96 mx-auto rounded-3xl' src="/images/Herosection/iss.jpg" alt="" />
+                                            </div>
                                             <div className="max-w-full w-full ">
 
                                                 <div className='grid  grid-flow-row grid-cols-2 mt-5 gap-8 md:grid-cols-2 lg:grid-cols-3'>
@@ -50,9 +60,7 @@ function Aboutus() {
                             </div>
                         </section>
                     </section>
-                    <section  className="col-span-1 mx-auto h-fit p-2 space-y-3 sticky top-20 lg:block hidden">
-                        <Dash />
-                    </section>
+
                 </section>
             </section>
         </>

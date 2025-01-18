@@ -4,24 +4,34 @@ import Dash from '../Side/Dash';
 import { GrDocumentZip } from 'react-icons/gr';
 import HeroSection from '../HeroSection/HeroSection';
 function Aboutus() {
- const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(true);
   return (
     <>
-      <section className="max-w-[96rem] mx-auto">
-        <section className="grid grid-cols-6 gap-5">
-          <section className="lg:col-span-5 col-span-6 ">
+      <section className="   mx-auto">
+        <section className=" ">
+          <section className=" ">
             <section className="">
               <HeroSection
-              isActive={isActive}
-              activeText="Author Guidelines"
+                isActive={isActive}
+                activeText="Author Guidelines"
               />
               <div className="max-w-screen-xl mx-auto w-full px-3 2xl:px-0  py-5">
                 <div className="lg:flex md:flex ">
                   <div className="max-w-full w-full ">
-                    <div className="border p-2 rounded-sm border-gray-100 bg-white">
-                      <h1 className="text-black border w-fit p-2 bg-[#C0DBF8] md:text-3xl text-lg  ">
-                        Author Guidelines
-                      </h1>
+                    <div className="  p-2   bg-white">
+                      <p className="text-center md:text-2xl text-lg">Author Guidelines</p>
+                      <div class="flex items-center justify-center gap-1.5">
+                        <span class="w-1.5 h-1.5 bg-[#388883] rounded-full"></span>
+                        <span class="w-2 h-2 bg-[#388883] rounded-full"></span>
+                        <span class="w-2.5 h-2.5 bg-[#388883] rounded-full"></span>
+                        <span class="w-3.5 h-3.5 bg-[#388883] rounded-full"></span>
+                        <span class="w-2.5 h-2.5 bg-[#388883] rounded-full"></span>
+                        <span class="w-2 h-2 bg-[#388883] rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-[#388883] rounded-full"></span>
+                      </div>
+                      <div className='mx-auto mt-4 '>
+                        <img className='w-96 mx-auto rounded-3xl' src="/images/Herosection/guide.jpg" alt="" />
+                      </div>
 
                       <div className="max-w-full w-full ">
 
@@ -43,7 +53,7 @@ function Aboutus() {
                             <a
                               href="/documents/"
                               target="blank"
-                              className="text-[#4b2d8b] underline inline-flex ml-1 gap-1 items-center"
+                              className="text-[#007BFF] underline inline-flex ml-1 gap-1 items-center"
                             > {''} template < GrDocumentZip className="text-lg" /></a>
                           </li>
                           <li>
@@ -88,7 +98,7 @@ function Aboutus() {
                             The paper must be submitted through the
                             <a
                               href="https://AJARCSE.com/aritms/index.php/AJARCSE/about/submissions"
-                              className="text-[#4b2d8b] underline whitespace-nowrap"
+                              className="text-[#007BFF] underline whitespace-nowrap"
                             >
                               {" "}
                               Open Journal System
@@ -110,16 +120,16 @@ function Aboutus() {
                             and requirements. For more information, please write to
                             <a
                               href="mailto:editor@AJARCSE.com"
-                              className="text-[#4b2d8b] underline  "
+                              className="text-[#007BFF] underline  "
                             >
                               {" "}
-                              editor@AJARCSE.com.
+                              editor@ajarcse.com.
                             </a>
                           </li>
                         </ul>
                         <a
                           href="https://AJARCSE.com/aritms/index.php/AJARCSE/submission/wizard"
-                          className="text-[#4b2d8b] underline underline-offset-1 hover:underline-offset-4 hover:text-blue-500 duration-200 pt-5"
+                          className="text-[#007BFF] underline underline-offset-1 hover:underline-offset-4 hover:text-blue-500 duration-200 pt-5"
                         >
                           Submit a paper via OJS
                         </a>
@@ -199,17 +209,13 @@ function Aboutus() {
                           impact and exploitation potential of the published article.
                         </p>
                       </div>
-
-
                     </div>
                   </div>
                 </div>
               </div>
             </section>
           </section>
-          <section  className="col-span-1 mx-auto h-fit p-2 space-y-3 sticky top-20 lg:block hidden">
-            <Dash />
-          </section>
+
         </section>
       </section>
     </>

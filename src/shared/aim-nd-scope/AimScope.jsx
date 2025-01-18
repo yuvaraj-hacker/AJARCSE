@@ -14,19 +14,29 @@ function Aboutus() {
   const [isActive, setIsActive] = useState(true);
   return (
     <>
-      <section className="max-w-[96rem] mx-auto">
-        <section className="grid grid-cols-6 gap-5">
+      <section className="  mx-auto">
+        <section className=" ">
 
-          <section className="lg:col-span-5 col-span-6  ">
+          <section className="  ">
             <section className="">
               <HeroSection isActive={isActive} activeText="Aim and Scope" />
               <div className="max-w-screen-xl mx-auto w-full px-3 2xl:px-0  py-5">
                 <div className="lg:flex md:flex ">
                   <div className="max-w-full w-full ">
-                    <div className="border p-2 rounded-sm border-gray-100 bg-white">
-                      <h1 className="text-black border w-fit p-2 bg-[#C0DBF8] md:text-3xl text-lg  ">
-                        Aim and Scope
-                      </h1>
+                    <div className="  p-2  ">
+                      <p className="text-center md:text-2xl text-lg">Aim and Scope</p>
+                      <div class="flex items-center   justify-center gap-1.5">
+                        <span class="w-1.5 h-1.5 bg-[#388883] rounded-full"></span>
+                        <span class="w-2 h-2 bg-[#388883] rounded-full"></span>
+                        <span class="w-2.5 h-2.5 bg-[#388883] rounded-full"></span>
+                        <span class="w-3.5 h-3.5 bg-[#388883] rounded-full"></span>
+                        <span class="w-2.5 h-2.5 bg-[#388883] rounded-full"></span>
+                        <span class="w-2 h-2 bg-[#388883] rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-[#388883] rounded-full"></span>
+                      </div>
+                      <div className='mx-auto mt-4 '>
+                        <img className='w-96 mx-auto rounded-3xl' src="/images/Herosection/scope.jpg" alt="" />
+                      </div>
                       <div className="max-w-full w-full">
                         <h1 className="font-semibold lg:text-xl mb-2 mt-8">Aim</h1>
                         <h1 className="  mb-3  text-justify leading-loose">International Journal of Advanced Research in Information Technology and
@@ -48,9 +58,7 @@ function Aboutus() {
               </div>
             </section>
           </section>
-          <section  className="col-span-1 mx-auto h-fit p-2 space-y-3 sticky top-20 lg:block hidden">
-            <Dash />
-          </section>
+
         </section>
       </section>
     </>

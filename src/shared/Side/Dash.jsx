@@ -8,7 +8,6 @@ function Dash() {
     return (
         <>
             <section className='space-y-4 sticky top-10'>
-
                 <div className="border border-[#70a2db] text-center bg-white p-2">
                     <button className="p-2 border bg-[#EDF5FF] hover:bg-white">
                         Submit New Manuscript
@@ -20,7 +19,7 @@ function Dash() {
                         <div className="p-2 ">
                             <button className={`p-2 w-full border flex items-center gap-3 2xl:text-base text-xs ${isActive("/") ? "bg-white" : "bg-[#EDF5FF]"} hover:bg-white`}>
                                 <img className='w-6' src="/images/Herosection/Home.png" alt="" />
-                                Home
+                                    Home
                             </button>
                         </div>
                     </Link>

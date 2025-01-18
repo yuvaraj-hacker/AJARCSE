@@ -96,14 +96,16 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-black py-6">
+    <footer className="bg-[#388883] text-white py-6">
       <div className=" mx-auto px-5 max-w-[97rem]  " >
         <div className="grid grid-cols-1   md:grid-cols-3 gap-8">
           {/* Contact Information */}
-          <div>
+          <div  >
             <h4 className="text-xl font-bold mb-2">AJARCSE</h4>
-            <p>Email: <a href="mailto:editor@AJARCSE.com" className="text-blue-400">editor@ajarcse.com</a></p>
-            <p>Website: <a href="https://www.AJARCSE.com" className="text-blue-400">www.ajarcse.com</a></p>
+            <div className=''>
+              <p>Email: <a href="mailto:editor@AJARCSE.com" className=" ">editor@ajarcse.com</a></p>
+              <p>Website: <a href="https://www.AJARCSE.com" className=" ">www.ajarcse.com</a></p>
+            </div>
           </div>
 
           {/* Navigation Links */}
