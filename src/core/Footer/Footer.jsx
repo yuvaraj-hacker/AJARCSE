@@ -98,7 +98,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#388883] text-white py-6">
       <div className=" mx-auto px-5 max-w-[97rem]  " >
-        <div className="grid grid-cols-1   md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1   md:grid-cols-3 md:gap-8 gap-4">
           {/* Contact Information */}
           <div  >
             <h4 className="text-xl font-bold mb-2">AJARCSE</h4>
@@ -121,7 +121,7 @@ const Footer = () => {
 
           <div className='lg:ml-auto lg:text-right '>
             <h4 className="text-xl font-bold mb-2">Journal Overview</h4>
-            <ul>
+            <ul className="">
               <li><a href="/editorial-board" className="hover:underline">Editorial Board</a></li>
               <li><a href="/peerreview" className="hover:underline">Peer Review Process</a></li>
               <li><a href="/publicationethic" className="hover:underline">Publication Ethics</a></li>
