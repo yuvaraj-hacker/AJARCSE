@@ -90,7 +90,7 @@ function Home() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 bg-white rounded-sm   py-5">
                   <div className="max-w-full w-full p-2 md:text-base text-sm">
 
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       {/* <svg width="30" height="30" viewBox="0 0 200 200">
                         <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
                         <circle cx="100" cy="100" r="20" fill="#e74c3c">
@@ -100,7 +100,7 @@ function Home() {
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6  "> 1 </p>
                       <h1 className="  ">AI & Machine Learning Innovations</h1>
                     </h1>
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       {/* <svg width="30" height="30" viewBox="0 0 200 200">
                         <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
                         <circle cx="100" cy="100" r="20" fill="#e74c3c">
@@ -110,7 +110,7 @@ function Home() {
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 2 </p>
                       <h1> Blockchain & Fintech Evolution</h1>
                     </h1>
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       {/* <svg width="30" height="30" viewBox="0 0 200 200">
                         <circle cx="100" cy="100" r="80" stroke="#3498db" strokeWidth="10" fill="none" />
                         <circle cx="100" cy="100" r="20" fill="#e74c3c">
@@ -119,24 +119,24 @@ function Home() {
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 3 </p>
                       <h1>  Quantum Computing Trends</h1>
                     </h1>
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 4 </p>
                       <h1>  Edge Computing & IoT </h1>
                     </h1>
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 5 </p>
                       <h1> Cybersecurity & Threat Intelligence</h1>
                     </h1>
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 6 </p>
                       <h1> Cloud Computing Advances</h1>
                     </h1>
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 7 </p>
                       <h1>Big Data & Predictive Analytics</h1>
                     </h1>
 
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 8 </p>
                       <h1> Augmented & Virtual Reality (AR/VR)</h1>
                     </h1>
@@ -145,19 +145,19 @@ function Home() {
                   </div>
                   <div className="max-w-full p-2 w-full md:text-base text-sm">
 
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 9 </p>
                       <h1>  Automation & Robotics</h1>
                     </h1>
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 10 </p>
                       <h1> Digital Transformation Strategies</h1>
                     </h1>
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 11 </p>
                       <h1>5G & Future Networks</h1>
                     </h1>
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 12 </p>
                       <h1> Smart Cities & IoT Integration</h1>
                     </h1>
@@ -165,59 +165,59 @@ function Home() {
 
 
 
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 13 </p>
                       <h1> Human-Computer Interaction</h1>
                     </h1>
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 14 </p>
                       <h1>Deep Learning & Neural Networks</h1>
                     </h1>
 
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 15 </p>
                       <h1>Computational Intelligence</h1>
                     </h1>
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 16 </p>
                       <h1>  Natural Language Processing (NLP)</h1>
                     </h1>
                   </div>
                   <div className="max-w-full p-2 w-full md:text-base text-sm ">
 
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 17 </p>
                       <h1> Bioinformatics & Computational Biology</h1>
                     </h1>
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 18 </p>
                       <h1>   Cryptography & Data Security</h1>
                     </h1>
 
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 19 </p>
                       <h1>  E-Governance & Digital Policies</h1>
                     </h1>
 
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 20 </p>
                       <h1> Green Computing & Energy Efficiency</h1>
                     </h1>
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 21 </p>
                       <h1> Software Engineering Trends</h1>
                     </h1>
 
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 22 </p>
                       <h1>  Computer Vision & Image Processing</h1>
                     </h1>
 
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 23 </p>
                       <h1> E-Commerce & Smart Payment Systems</h1>
                     </h1>
-                    <h1 className="flex items-center gap-2 mb-1">
+                    <h1 className="flex items-center gap-2 md:mb-1">
                       <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 24 </p>
                       <h1> Ethical AI & Responsible Computing</h1>
                     </h1>
