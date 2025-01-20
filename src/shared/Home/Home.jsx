@@ -88,7 +88,7 @@ function Home() {
                   </h1>
                 </div> */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 bg-white rounded-sm   py-5">
-                  <div className="max-w-full w-full p-2 md:text-base text-sm">
+                  <div className="max-w-full w-full p-2 md:text-base text-sm space-y-3">
 
                     <h1 className="flex items-center gap-2 md:mb-1">
                       {/* <svg width="30" height="30" viewBox="0 0 200 200">
@@ -97,7 +97,8 @@ function Home() {
 
                         </circle>
                       </svg> */}
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6  "> 1 </p>
+
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1 className="  ">AI & Machine Learning Innovations</h1>
                     </h1>
                     <h1 className="flex items-center gap-2 md:mb-1">
@@ -107,7 +108,7 @@ function Home() {
 
                         </circle>
                       </svg> */}
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 2 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1> Blockchain & Fintech Evolution</h1>
                     </h1>
                     <h1 className="flex items-center gap-2 md:mb-1">
@@ -116,49 +117,49 @@ function Home() {
                         <circle cx="100" cy="100" r="20" fill="#e74c3c">
                         </circle>
                       </svg> */}
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 3 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1>  Quantum Computing Trends</h1>
                     </h1>
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 4 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1>  Edge Computing & IoT </h1>
                     </h1>
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 5 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1> Cybersecurity & Threat Intelligence</h1>
                     </h1>
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 6 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1> Cloud Computing Advances</h1>
                     </h1>
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 7 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1>Big Data & Predictive Analytics</h1>
                     </h1>
 
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 8 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1> Augmented & Virtual Reality (AR/VR)</h1>
                     </h1>
 
 
                   </div>
-                  <div className="max-w-full p-2 w-full md:text-base text-sm">
+                  <div className="max-w-full p-2 w-full md:text-base text-sm space-y-3">
 
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 9 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1>  Automation & Robotics</h1>
                     </h1>
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 10 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1> Digital Transformation Strategies</h1>
                     </h1>
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 11 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1>5G & Future Networks</h1>
                     </h1>
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 12 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1> Smart Cities & IoT Integration</h1>
                     </h1>
 
@@ -166,59 +167,59 @@ function Home() {
 
 
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 13 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1> Human-Computer Interaction</h1>
                     </h1>
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 14 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1>Deep Learning & Neural Networks</h1>
                     </h1>
 
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 15 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1>Computational Intelligence</h1>
                     </h1>
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 16 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1>  Natural Language Processing (NLP)</h1>
                     </h1>
                   </div>
-                  <div className="max-w-full p-2 w-full md:text-base text-sm ">
+                  <div className="max-w-full p-2 w-full md:text-base text-sm  space-y-3">
 
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 17 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1> Bioinformatics & Computational Biology</h1>
                     </h1>
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 18 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1>   Cryptography & Data Security</h1>
                     </h1>
 
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 19 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1>  E-Governance & Digital Policies</h1>
                     </h1>
 
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 20 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1> Green Computing & Energy Efficiency</h1>
                     </h1>
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 21 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1> Software Engineering Trends</h1>
                     </h1>
 
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 22 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1>  Computer Vision & Image Processing</h1>
                     </h1>
 
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 23 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1> E-Commerce & Smart Payment Systems</h1>
                     </h1>
                     <h1 className="flex items-center gap-2 md:mb-1">
-                      <p className="jersey-15-regular text-3xl text-[#388883] w-6"> 24 </p>
+                      <img className="jersey-15-regular text-3xl text-[#388883] w-6" src="/images/Herosection/littlegreen.png" alt="" />
                       <h1> Ethical AI & Responsible Computing</h1>
                     </h1>
                   </div>
