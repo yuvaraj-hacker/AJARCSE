@@ -140,7 +140,7 @@ const Footer = () => {
             <p>© 2025 AJARCSE. All Rights Reserved.</p>
           </div>
           <div>
-            <img className='ml-auto w-24' src="/images/Herosection/OJS.png" alt="ojs" />
+            <img className='ml-auto w-24' src="/images/Herosection/white.png" alt="ojs" />
           </div>
         </div>
       </div>
